@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    Hello, World!
-    We are Software Developers!!!!
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="title__container">
+        <h1 id="title">A Survey for Food hub</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <div class="form__container">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name
+            <input type="text" id="name" placeholder="Name" required />
+          </label>
+          <label for="email" id="email-label">Email
+            <input type="email" id="email" placeholder="Email" required />
+          </label>
+          <label for="number" id="number-label">Number
+            <input type="number" id="number" placeholder="Age" min="1" max="9" required />
+          </label>
+          <div class="select">
+            <p>Which option best describes your Favourite Meal?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Most Favorite Meal</option>
+              <option value="Yam">Yam</option>
+              <option value="Rice">Rice</option>
+              <option value="Beans">Beans</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form__container">
+            <p>Would you tell someone about Us?</p>
+            <label>
+              <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Yes</label>
+            <label>
+              <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Not Sure</label>
+
+            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No</label>
+          </div>
+          <div class="form__container">
+            <p>
+              What Food would you like to be included?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label><input name="prefer" value="Amala" type="checkbox" class="input-checkbox" />Amala</label>
+            <label>
+              <input name="prefer" value="Eba" type="checkbox" class="input-checkbox" />Eba</label>
+            <label><input name="prefer" value="Semo" type="checkbox" class="input-checkbox" />Semo</label>
+            <label><input name="prefer" value="Pounded Yam" type="checkbox" class="input-checkbox" />Pounded
+              Yam</label>
+            <label><input name="prefer" value="Fufu" type="checkbox" class="input-checkbox" />Fufu</label>
+          </div>
+          <div class="form__container">
+            <p>Any comments or suggestions?</p>
+            <textarea name="textarea" id="comments" cols="30" rows="10">
+            </textarea>
+            <div class="form-container">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Hello, World!
+    We are Software Developers!!!! -->
+</body>
+
 </html>
